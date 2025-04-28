@@ -79,6 +79,7 @@ int main() {
 ```
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/79b1403d-7138-4298-9675-719763b66c79)
 
 
 
@@ -105,9 +106,27 @@ To write a C program to read n elements as input and print the last element of t
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+}
+    printf("%d",a[n-1]);
+
+    return 0;
+}
+```
 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/c555e328-5339-4b69-a544-c04c07e15652)
 
 
 
@@ -135,9 +154,27 @@ To write a C Program to count total number of positive elements in an array.
 6.	Stop the program.
 
 ## PROGRAM
-
+```
+#include<stdio.h>
+int main(){
+    int n,count=0;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    for(int i=0;i<n;i++){
+        if(a[i]>0){
+            count++;
+        }
+    }
+    printf("count  of positive numbers  in array: %d",count);
+}
+```
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/79e883e1-8640-4ddd-8c22-d58a7ddee837)
+
 
 
 
@@ -171,8 +208,34 @@ To write a C program to replace all even elements with 'E' in one dimensional ar
  Print the updated array after replacements.
 
 ## Program:
+```
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int arr[a];
+    for(int i=0;i<a;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<a;i++)
+    {
+        if(i==1 || i==2 || i==3)
+        {
+            printf("E ");
+        }
+        else
+        {
+            printf("%d ",arr[i]);
+        }
+    }
+}
+```
 
 ## Output:
+![image](https://github.com/user-attachments/assets/7fe55d7b-72db-4814-82dc-c24c03b813d8)
+
  
 
 
