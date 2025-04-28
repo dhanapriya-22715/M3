@@ -1,4 +1,6 @@
 # EX-11-EMI-CALCULATOR
+## NAME : Dhanappriya S
+## REGISTER : 212224230056
 
 ## AIM
 
@@ -14,9 +16,22 @@ To write a program to prepare EMI calculator using function without return type 
 6.	Stop the program.
 
 ## PROGRAM
-
-
+```
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float p = 775000, R = 8.75, y = 10.6 * 12, emi, r, c;
+    r = R/(12*100);
+    c = pow((1+r),y);
+    emi = (p*c*r)/(c-1);
+    printf("Monthly EMI is= %.3f",emi);
+    return 0;
+}
+```
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/6f35ebea-5728-4e2a-885a-2df776f93e00)
+
 
 
 
@@ -43,6 +58,25 @@ To write a C program to generate the Fibonacci series for the value 6.
 7.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+int main() {
+    int n = 6; 
+    int a = 0, b = 1, next, i;
+
+    printf("Fibonacci series for %d terms:\n", n);
+
+    for (i = 1; i <= n; i++) {
+        printf("%d ", a);
+        next = a + b;
+        a = b;
+        b = next;
+    }
+
+    printf("\n");
+    return 0;
+}
+```
 
 ## OUTPUT
 
